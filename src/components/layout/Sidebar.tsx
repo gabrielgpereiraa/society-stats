@@ -102,8 +102,8 @@ export function Sidebar() {
         </nav>
 
         <div className="border-t border-campo-600/40 px-4 py-4">
-          <p className="text-xs text-slate-600">Temporada 2025</p>
-          <p className="text-xs font-semibold text-slate-400">Os Crias Society FC</p>
+          <p className="text-xs text-slate-600">Temporada 2026</p>
+          <p className="text-xs font-semibold text-slate-400">Vasco da Gama</p>
         </div>
       </aside>
     </>

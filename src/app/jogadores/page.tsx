@@ -34,7 +34,7 @@ export default function JogadoresPage() {
           Jogadores
         </h1>
         <p className="mt-1 text-slate-400">
-          {jogadores.length} atletas cadastrados · Temporada 2025
+          {jogadores.length} atletas cadastrados · Temporada 2026
         </p>
       </div>
 
