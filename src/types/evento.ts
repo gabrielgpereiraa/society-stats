@@ -11,6 +11,7 @@ export type TipoEvento =
 export interface LanceYoutube {
   videoId: string
   startSeconds: number
+  endSeconds: number
 }
 
 export interface Evento {

@@ -11,9 +11,9 @@ export const PARTIDAS: Partida[] = [
     },
     placar: { nos: 3, adversario: 3 },
     resultado: 'empate',
-    local: 'Arena Society Park — Quadra 3',
-    descricao: 'Primeira rodada do campeonato. Três gols a três numa batalha intensa de 50 minutos.',
-    youtubeVideoId: 'dQw4w9WgXcQ',
+    local: 'Arena Palhano',
+    descricao: 'Primeira rodada da Liga Palhano Tamboré 2026.',
+    youtubeVideoId: 'rmBw6lTyOg8',
     eventos: [
       {
         id: 'ev-001',
@@ -21,7 +21,7 @@ export const PARTIDAS: Partida[] = [
         minutoJogo: 9,
         jogadorId: 'chris',
         descricao: 'Gol de falta no canto inferior direito',
-        lance: { videoId: 'rmBw6lTyOg8', startSeconds: 6590 },
+        lance: { videoId: 'rmBw6lTyOg8', startSeconds: 6590, endSeconds: 6625 },
       },
       {
         id: 'ev-002',
@@ -29,7 +29,7 @@ export const PARTIDAS: Partida[] = [
         minutoJogo: 22,
         jogadorId: 'magalhaes',
         descricao: 'Golaço de voleio após cruzamento na área',
-        lance: { videoId: 'rmBw6lTyOg8', startSeconds: 7388 },
+        lance: { videoId: 'rmBw6lTyOg8', startSeconds: 7388, endSeconds: 7422 },
       },
       {
         id: 'ev-003',
@@ -45,7 +45,7 @@ export const PARTIDAS: Partida[] = [
         minutoJogo: 33,
         jogadorId: 'tourinho',
         descricao: 'Gol em contra-ataque veloz',
-        lance: { videoId: 'dQw4w9WgXcQ', startSeconds: 1980 },
+        lance: null,
       },
       {
         id: 'ev-005',
@@ -252,35 +252,5 @@ export const PARTIDAS: Partida[] = [
         disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 },
       },
     ],
-  },
-  {
-    id: 'partida-002',
-    data: '2025-03-08T20:00:00',
-    adversario: { nome: 'Trovões FC', sigla: 'TFC', escudoUrl: null },
-    placar: { nos: 5, adversario: 2 },
-    resultado: 'vitoria',
-    local: 'Arena Society Park — Quadra 3',
-    descricao: 'Vitória convincente com grande atuação coletiva.',
-    youtubeVideoId: null,
-    eventos: [
-      { id: 'ev-101', tipo: 'gol', minutoJogo: 7, jogadorId: 'magalhaes', descricao: 'Gol de cabeça', lance: null },
-      { id: 'ev-102', tipo: 'gol', minutoJogo: 15, jogadorId: 'tourinho', descricao: 'Gol de pênalti', lance: null },
-      { id: 'ev-103', tipo: 'gol', minutoJogo: 28, jogadorId: 'chris', descricao: 'Chute cruzado', lance: null },
-      { id: 'ev-104', tipo: 'gol', minutoJogo: 37, jogadorId: 'sandro', descricao: 'Finalização no canto', lance: null },
-      { id: 'ev-105', tipo: 'gol', minutoJogo: 44, jogadorId: 'magalhaes', descricao: 'Segundo gol da partida', lance: null },
-    ],
-    estatisticas: [
-      { jogadorId: 'lando', minutosJogados: 50, nota: 7.2, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 0, finalizacoesTotal: 0, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 5, passesTotal: 6, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 0, desarmes: 0, bloqueios: 0, defesasGoleiro: 3 }, posse: { bolasGanhas: 0, bolasPerdidas: 0, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 0, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'magalhaes', minutosJogados: 50, nota: 8.6, ataque: { gols: 2, assistencias: 1, finalizacoesNoGol: 3, finalizacoesTotal: 4, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 12, passesTotal: 15, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 1, cortes: 1, desarmes: 1, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 3, bolasPerdidas: 1, driblesCompletos: 4, driblesTotais: 5, dividasGanhas: 2, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 1, faltasSofridas: 1, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'tourinho', minutosJogados: 50, nota: 7.8, ataque: { gols: 1, assistencias: 2, finalizacoesNoGol: 2, finalizacoesTotal: 3, golContra: 0, penaltiConvertido: 1, penaltiPerdido: 0 }, passagem: { passesCompletos: 8, passesTotal: 10, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 0, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 2, bolasPerdidas: 2, driblesCompletos: 2, driblesTotais: 3, dividasGanhas: 0, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'chris', minutosJogados: 50, nota: 7.5, ataque: { gols: 1, assistencias: 1, finalizacoesNoGol: 1, finalizacoesTotal: 2, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 20, passesTotal: 24, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 1, cortes: 1, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 1, bolasPerdidas: 0, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 1, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 1, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'sandro', minutosJogados: 50, nota: 7.2, ataque: { gols: 1, assistencias: 0, finalizacoesNoGol: 1, finalizacoesTotal: 2, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 14, passesTotal: 18, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 0, desarmes: 1, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 2, bolasPerdidas: 2, driblesCompletos: 1, driblesTotais: 2, dividasGanhas: 1, dividasPerdidas: 1 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'marrom', minutosJogados: 50, nota: 7.0, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 0, finalizacoesTotal: 0, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 14, passesTotal: 17, cruzamentosCompletos: 2, cruzamentosTotal: 3 }, defesa: { interceptacoes: 4, cortes: 2, desarmes: 0, bloqueios: 1, defesasGoleiro: 0 }, posse: { bolasGanhas: 0, bolasPerdidas: 1, driblesCompletos: 1, driblesTotais: 1, dividasGanhas: 1, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 1, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'jamal', minutosJogados: 50, nota: 6.9, ataque: { gols: 0, assistencias: 1, finalizacoesNoGol: 1, finalizacoesTotal: 2, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 9, passesTotal: 11, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 1, cortes: 1, desarmes: 0, bloqueios: 1, defesasGoleiro: 0 }, posse: { bolasGanhas: 2, bolasPerdidas: 1, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 0, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'alonso', minutosJogados: 50, nota: 6.7, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 0, finalizacoesTotal: 0, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 7, passesTotal: 10, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 4, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 0, bolasPerdidas: 0, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 1, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'samuel', minutosJogados: 40, nota: 6.3, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 1, finalizacoesTotal: 2, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 8, passesTotal: 11, cruzamentosCompletos: 1, cruzamentosTotal: 2 }, defesa: { interceptacoes: 0, cortes: 1, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 1, bolasPerdidas: 1, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 0, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 1, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'ferran', minutosJogados: 40, nota: 6.0, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 0, finalizacoesTotal: 0, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 5, passesTotal: 7, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 2, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 0, bolasPerdidas: 0, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 1, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-      { jogadorId: 'murilo', minutosJogados: 40, nota: 5.9, ataque: { gols: 0, assistencias: 0, finalizacoesNoGol: 0, finalizacoesTotal: 0, golContra: 0, penaltiConvertido: 0, penaltiPerdido: 0 }, passagem: { passesCompletos: 5, passesTotal: 6, cruzamentosCompletos: 0, cruzamentosTotal: 0 }, defesa: { interceptacoes: 0, cortes: 1, desarmes: 0, bloqueios: 0, defesasGoleiro: 0 }, posse: { bolasGanhas: 0, bolasPerdidas: 0, driblesCompletos: 0, driblesTotais: 0, dividasGanhas: 0, dividasPerdidas: 0 }, disciplina: { cartoesAmarelos: 0, cartoesVermelhos: 0, faltasCometidas: 0, faltasSofridas: 0, penaltiCometido: 0, penaltiSofrido: 0 } },
-    ],
-  },
+  }
 ]

@@ -3,10 +3,10 @@ import { EstatisticasJogador } from '@/types'
 
 const LIMITES_LABEL: { minimo: number; label: LabelDesempenho; corClasse: string; corBg: string }[] = [
   { minimo: 8.5, label: 'Destaque da partida', corClasse: 'text-gol', corBg: 'bg-gol-muted' },
-  { minimo: 7.5, label: 'Muito bem',            corClasse: 'text-acento', corBg: 'bg-acento-muted' },
-  { minimo: 6.5, label: 'Boa atuação',          corClasse: 'text-acento', corBg: 'bg-acento-muted' },
-  { minimo: 5.5, label: 'Regular',              corClasse: 'text-slate-400', corBg: 'bg-slate-700/40' },
-  { minimo: 0,   label: 'Em evolução',          corClasse: 'text-slate-500', corBg: 'bg-slate-800/60' },
+  { minimo: 7.5, label: 'Muito bem', corClasse: 'text-acento', corBg: 'bg-acento-muted' },
+  { minimo: 6.5, label: 'Boa atuação', corClasse: 'text-acento', corBg: 'bg-acento-muted' },
+  { minimo: 5.5, label: 'Regular', corClasse: 'text-slate-400', corBg: 'bg-slate-700/40' },
+  { minimo: 0, label: 'Em evolução', corClasse: 'text-slate-500', corBg: 'bg-slate-800/60' },
 ]
 
 export function resolverLabelNota(valor: number): Omit<AvaliacaoNota, 'valor'> {

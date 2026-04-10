@@ -4,6 +4,7 @@ import { PageContainer } from '@/components/layout/PageContainer'
 import { SecaoTitulo } from '@/components/shared/SecaoTitulo'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
+import { Card, CardContent } from '@/components/ui/card'
 import { ResumoUltimaPartida } from '@/features/dashboard/components/ResumoUltimaPartida'
 import { LideresTime } from '@/features/dashboard/components/LideresTime'
 import { DestaqueRecente } from '@/features/dashboard/components/DestaqueRecente'
@@ -45,6 +46,7 @@ export default function DashboardPage() {
           </h1>
           <p className="mt-1 text-slate-400">CR Vasco da Gama</p>
         </div>
+
         <div className="flex items-center gap-2">
           <Link href="/partidas">
             <Button variant="outline" size="sm" className="gap-1.5">
@@ -52,6 +54,7 @@ export default function DashboardPage() {
               <span className="hidden sm:inline">Partidas</span>
             </Button>
           </Link>
+
           <Link href="/rankings">
             <Button variant="outline" size="sm" className="gap-1.5">
               <Trophy className="h-4 w-4" />
@@ -113,43 +116,49 @@ export default function DashboardPage() {
       <section>
         <SecaoTitulo titulo="Acesso rápido" />
         <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
-          <Link href="/jogadores">
-            <div className="flex cursor-pointer items-center gap-4 rounded-xl border border-campo-600/50 bg-campo-800 p-4 transition-all hover:border-campo-500">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-acento/10">
-                <Users className="h-5 w-5 text-acento" />
-              </div>
-              <div>
-                <p className="font-display font-bold text-slate-100">Jogadores</p>
-                <p className="text-xs text-slate-500">{jogadores.length} atletas</p>
-              </div>
-              <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
-            </div>
+          <Link href="/jogadores" className="block">
+            <Card className="cursor-pointer rounded-xl border border-campo-600/50 bg-campo-800 transition-all hover:border-campo-500">
+              <CardContent className="flex items-center gap-4 p-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-acento/10">
+                  <Users className="h-5 w-5 text-acento" />
+                </div>
+                <div>
+                  <p className="font-display font-bold text-slate-100">Jogadores</p>
+                  <p className="text-xs text-slate-500">{jogadores.length} atletas</p>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
+              </CardContent>
+            </Card>
           </Link>
 
-          <Link href="/partidas">
-            <div className="flex cursor-pointer items-center gap-4 rounded-xl border border-campo-600/50 bg-campo-800 p-4 transition-all hover:border-campo-500">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gol/10">
-                <CalendarDays className="h-5 w-5 text-gol" />
-              </div>
-              <div>
-                <p className="font-display font-bold text-slate-100">Partidas</p>
-                <p className="text-xs text-slate-500">Histórico completo</p>
-              </div>
-              <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
-            </div>
+          <Link href="/partidas" className="block">
+            <Card className="cursor-pointer rounded-xl border border-campo-600/50 bg-campo-800 transition-all hover:border-campo-500">
+              <CardContent className="flex items-center gap-4 p-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gol/10">
+                  <CalendarDays className="h-5 w-5 text-gol" />
+                </div>
+                <div>
+                  <p className="font-display font-bold text-slate-100">Partidas</p>
+                  <p className="text-xs text-slate-500">Histórico completo</p>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
+              </CardContent>
+            </Card>
           </Link>
 
-          <Link href="/rankings">
-            <div className="flex cursor-pointer items-center gap-4 rounded-xl border border-campo-600/50 bg-campo-800 p-4 transition-all hover:border-campo-500">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-campo-700">
-                <Trophy className="h-5 w-5 text-slate-300" />
-              </div>
-              <div>
-                <p className="font-display font-bold text-slate-100">Rankings</p>
-                <p className="text-xs text-slate-500">Destaques positivos</p>
-              </div>
-              <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
-            </div>
+          <Link href="/rankings" className="block">
+            <Card className="cursor-pointer rounded-xl border border-campo-600/50 bg-campo-800 transition-all hover:border-campo-500">
+              <CardContent className="flex items-center gap-4 p-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-campo-700">
+                  <Trophy className="h-5 w-5 text-slate-300" />
+                </div>
+                <div>
+                  <p className="font-display font-bold text-slate-100">Rankings</p>
+                  <p className="text-xs text-slate-500">Destaques positivos</p>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 text-slate-600" />
+              </CardContent>
+            </Card>
           </Link>
         </div>
       </section>
